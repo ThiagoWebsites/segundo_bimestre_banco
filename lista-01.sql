@@ -51,7 +51,7 @@ SELECT *
 from Livros
 Limit 5;
 
-SELECT SUM(quantidade_paginas)
+SELECT SUM(quantidade_paginas) total, AVG(quantidade_paginas) media
 FROM Livros
 where categoria = "Drama";
 
